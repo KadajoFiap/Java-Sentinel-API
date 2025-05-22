@@ -2,7 +2,7 @@ FROM registry.access.redhat.com/ubi8/openjdk-17:1.18 AS build
 
 WORKDIR /app
 COPY . .
-RUN ./mvnw package -Dquarkus.package.type=uber-jar
+RUN mvn package -Dquarkus.package.type=uber-jar
 
 FROM registry.access.redhat.com/ubi8/openjdk-17:1.18
 
