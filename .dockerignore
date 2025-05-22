@@ -7,3 +7,7 @@ target/
 .git/
 .gitignore
 README.md
+!pom.xml
+!src/
+!mvnw
+!mvnw.cmd
