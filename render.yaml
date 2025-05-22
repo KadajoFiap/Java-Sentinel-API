@@ -3,8 +3,7 @@ services:
     name: sentinel-api
     env: docker
     plan: free
-    buildCommand: ./mvnw package -Dquarkus.package.type=uber-jar
-    startCommand: java -jar target/quarkus-app/quarkus-run.jar
+    startCommand: java -jar /deployments/quarkus-run.jar
     envVars:
       - key: DATABASE_URL
         sync: false
